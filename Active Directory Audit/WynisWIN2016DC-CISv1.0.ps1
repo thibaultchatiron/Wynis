@@ -3000,7 +3000,7 @@ $chaine = $null
 $traitement = $null
 $id = "AAAPA" + "$indextest"
 $chaine = "$id" + ";" + "(L1)Ensure 'Audit PNP Activity' is set to 'Success'" + ";"
-$traitement = Get-Content $auditconfigfile |Select-String -pattern "(événements Plug-and-Play)|(PNP Activity)"
+$traitement = Get-Content $auditconfigfile |Select-String -pattern "(Événements Plug-and-Play)|(PNP Activity)"
 $traitement = $traitement.line
 
 $chaine += $traitement
@@ -3064,7 +3064,7 @@ $chaine = $null
 $traitement = $null
 $id = "AAAPA" + "$indextest"
 $chaine = "$id" + ";" + "(L1)Ensure 'Audit Group Membership' is set to 'Success" + ";"
-$traitement = Get-Content $auditconfigfile |Select-String -pattern "(Appartenance é un groupe)|(Group Membership)"
+$traitement = Get-Content $auditconfigfile |Select-String -pattern "(Appartenance à un groupe)|(Group Membership)"
 $traitement = $traitement.line
 $chaine += $traitement
 $chaine>> $nomfichier
@@ -3241,7 +3241,7 @@ $chaine = $null
 $traitement = $null
 $id = "AAAPA" + "$indextest"
 $chaine = "$id" + ";" + "(L1)Ensure 'Audit Sensitive Privilege Use' is set to 'Success and Failure'" + ";"
-$traitement = Get-Content $auditconfigfile |Select-String -pattern "(Utilisation de priviléges sensibles)|(Sensitive Privilege Use)"
+$traitement = Get-Content $auditconfigfile |Select-String -pattern "(Utilisation de privilèges sensibles)|(Sensitive Privilege Use)"
 $traitement = $traitement.line 
 
 $chaine += $traitement
@@ -3267,7 +3267,7 @@ $chaine = $null
 $traitement = $null
 $id = "AAAPA" + "$indextest"
 $chaine = "$id" + ";" + "(L1)Ensure 'Audit Other System Events' is set to 'Success and Failure'" + ";"
-$traitement = Get-Content $auditconfigfile |Select-String -pattern "(Autres événements systéme)|(Other System Events)"
+$traitement = Get-Content $auditconfigfile |Select-String -pattern "(Autres événements système)|(Other System Events)"
 $traitement = $traitement.line
    
 $chaine += $traitement
@@ -3291,7 +3291,7 @@ $chaine = $null
 $traitement = $null
 $id = "AAAPA" + "$indextest"
 $chaine = "$id" + ";" + "(L1)Ensure 'Audit Security System Extension' is set to include 'Success'" + ";"
-$traitement = Get-Content $auditconfigfile |Select-String -pattern "(Extension systéme de sécurité)|(Security System Extension)"
+$traitement = Get-Content $auditconfigfile |Select-String -pattern "(Extension système de sécurité)|(Security System Extension)"
 $traitement = $traitement.line 
 
 $chaine += $traitement
@@ -3305,7 +3305,7 @@ $chaine = $null
 $traitement = $null
 $id = "AAAPA" + "$indextest"
 $chaine = "$id" + ";" + "(L1)Ensure 'Audit System Integrity' is set to 'Success and Failure'" + ";"
-$traitement = Get-Content $auditconfigfile |Select-String -pattern "(Intégrité du systéme)|(System Integrity)"
+$traitement = Get-Content $auditconfigfile |Select-String -pattern "(Intégrité du système)|(System Integrity)"
 $traitement = $traitement.line 
 
 $chaine += $traitement
